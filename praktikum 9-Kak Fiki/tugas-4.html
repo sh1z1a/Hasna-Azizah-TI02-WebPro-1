@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Javascript 9.1.4</title>
+
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div class="container"><br>
+        <h1>Menghitung Penjumlahan Dua Bilangan</h1>       
+        <span><input type="number" name="" id="pilihan_1" onchange="hitung()"></span>
+        <span><h2>+</h2></span>
+        <span><input type="number" id="pilihan_2" onchange="hitung()"></span><br><br>
+        <span><h2>=</h2></span>
+        <span><input type="number" value="hitung" id="hasil"></span><br><br>
+    </div>
+
+    <script>
+        function hitung(){
+            let angka_1 = Number(document.getElementById("pilihan_1").value);
+            let angka_2 = Number(document.getElementById("pilihan_2").value);
+            let hitung = angka_1 + angka_2;
+            let hasil = document.getElementById("hasil").value = hitung;
+            /*hasil.value = hitung;*/
+            console.log(hitung);
+        }
+    </script>
+    
+</body>
+</html>

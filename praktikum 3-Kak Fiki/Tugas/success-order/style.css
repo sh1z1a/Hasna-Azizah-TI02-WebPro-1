@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 20px 50px;
+}
+
+header {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+ul, a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    color: black;
+    text-decoration: none;
+}
+
+main {
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    flex-basis: 30%;
+}
+
+.right {
+    flex-basis: 70%;
+}
+
+.right > form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: row;
+}
+
+form > div > label {
+    flex-basis: 20%;
+}
+
+.account {
+   row-gap: 5px;
+}
+li {
+    display: block;
+    text-decoration: none;
+}
+
+.title{
+    border: none;
+}
+
+.desc {
+    border: none;
+}
+.total {
+    border: none;
+}
+
+.pay {
+    border: none;
+}
+
+.account_label{
+    margin-right: 30px;
+}
+
+
+button {
+    padding: 5px 10px;
+    width: 150px;
+    background-color: rgb(165, 15, 15);
+    color: white;
+    border: none;
+}
+

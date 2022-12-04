@@ -1,0 +1,58 @@
+
+.kotak {
+    border: 1px solid black;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+header {
+    padding-bottom: 10px;
+}
+.item-1 {
+    background-color: royalblue;
+    width: 1010px;
+    height: 100px;
+}
+
+.container-2 {
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+.item-2 {
+    background-color: orangered;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.item-3 {
+    background-color: darkcyan;
+    width: 900px;
+    height: 100px;
+}
+
+.container-3 {
+    display: flex;
+    flex-direction: row;
+}
+
+.item-4 {
+    background-color: orange;
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+}
+
+.item-5 {
+    background-color: skyblue;
+    width: 900px;
+    height: 100px;
+}

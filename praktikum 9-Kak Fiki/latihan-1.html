@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript 9.1</title>
+</head>
+<body>
+    <h1>Menghitung Luas dan Keliling Lingkaran</h1>
+
+    <!-- Buat tag span dengan ID -->
+    <span id="pi"></span>
+    <br>
+    <span id="radius"></span>
+    <br>
+    <span id="luas"></span>
+    <br>
+    <span id="keliling"></span> 
+
+    <!-- Kode Javascript -->
+    <script>
+        //buat variabel phi
+        const phi = 3.14;
+        //buat variabel jari-jari
+        let r = 10;
+        //buat rumus luas lingkaran
+        let L = phi*(r*r);
+        //buat rumus keliling lingkaran
+        let K = phi*(2*r);
+
+        // tangkap element dengan ID, lalu masukan kontennya
+        document.getElementById("pi").innerHTML = "Phi : " + phi; 
+        document.getElementById("radius").innerHTML = "r : " + r;
+        document.getElementById("luas").innerHTML = "Luas : " + L;
+        document.getElementById("keliling").innerHTML = "Keliling : " + K;
+    </script>
+</body>
+</html>

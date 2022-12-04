@@ -1,0 +1,52 @@
+ 
+* {
+    box-sizing: border-box;
+} 
+ 
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column; /*mengubah main axis menjadi dari atas ke bawah*/
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex: 1; /* menempati sisa ruang pada flex container body */
+}
+
+#main > article {
+    flex: 1; /* menempati sisa ruang pada flex container #main */
+    order: 1; /* mengatur urutan pada flex item */
+    background: rgb(211, 150, 36);
+}
+
+#main > nav,
+#main > aside {
+    flex: 0 0 20vw; /* Mengatur lebar sebesar 20% lebar parent*/
+}
+
+#main > nav {
+    background: rgb(185, 36, 36);
+    order: 3;
+}
+
+#main > aside {
+    background: rgb(196, 169, 18);
+    order: 2;
+}
+
+header, footer {
+    background: rgb(26, 180, 207);
+    height: 20vh;
+}
+
+header, footer, article, nav, aside {
+    padding: 1em;
+}
+
+
+
+
+
+

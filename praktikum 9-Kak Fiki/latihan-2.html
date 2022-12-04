@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Javascript 9.2</title>
+</head>
+<body>
+    <h2>Dollar Ke Rupiah</h2>
+    <form>
+        <label for="dolar">Dollar : </label>
+        <input type="number" id="dollar">
+        <br><br>
+        <label for="rupiah">Kurs Rupiah : </label>
+        <input type="number" id="kurs" value="14650">
+        <br><br>
+        <input type="button" value="hitung" onclick="hitung_dollar();">
+        <br><br>
+        <label for="hasil">Hasil : </label>
+        <input type="text" id="hasil">
+    </form>
+
+    <h2>Rupiah ke Dollar</h2>
+    <form>
+        <label for="rupiah">Rupiah :</label>
+        <input type="number" name="" id="rupiah">
+        <br><br>
+        <input type="button" value="hitung" onclick="hitung_rupiah();"><br><br>
+        <label for="dollar">Dollar : </label>
+        <input type="text" id="hasil2">
+    </form>
+
+
+    <!-- Kode Javascript -->
+    <script>
+        //buat fungsi untuk menghitung dollar ke rupiah 
+        function hitung_dollar() {
+            //tangkap nilai input ke variabel
+            let dollar = document.getElementById("dollar").value;
+            let kurs = document.getElementById("kurs").value;
+            let hasil = dollar*kurs;
+            document.getElementById("hasil").value = "Rp." + hasil;
+        }
+
+        function hitung_rupiah() {
+            let rupiah = document.getElementById("rupiah").value;
+            let dollar = rupiah*(1/14650);
+            document.getElementById("hasil2").value = "$" + dollar;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Generate Link</a></li>
+                    <li><a href="">Transaction History</a></li>
+                    <li><a href="">Policy</a></li>
+                    <li><a href="">Logout</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="left">
+                <img src="img/macbook.webp" width="50%" alt="">
+                <p><button type="button" style="background-color: rgb(9, 9, 105);">Upload picture</button></p>
+            </div>
+            <div class="right">
+                <form action="file:///C:/xampp/htdocs/Hasna-WebPro-TI02/Praktikum%203-Pak%20Rojul/success-order/succes-order.html?">
+                    <div>
+                        <label for="">Title Here</label>
+                        <input type="text" name="" id="" required>
+                    </div>
+                    <div>
+                        <label for="">Description</label>
+                        <textarea name="" id="" cols="30" rows="10" required></textarea>
+                    </div>
+                    <div>
+                        <label for="">Account Number</label>
+                        <input type="tel" name="" id="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}-[0-9]{1}" placeholder="123-123-123-1" required>
+                    </div>
+                    <div>
+                        <label for="">Bank</label>
+                        <select name="" id="">
+                            <option value="HSBC">HSBC</option>
+                            <option value="Mandiri">Mandiri</option>
+                            <option value="BCA">BCA</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Account Holder</label>
+                        <input type="text" name="" id="" required>
+                    </div>
+                    <div>
+                        <label for="">Transaction</label>
+                        <div>
+                            <input type="number" name="" id="" required>                
+                            <p>*if the transaction is for 3 person, choose 3 from the drop-down list</p>
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Send to Mobile Phone</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="" id="">
+                                <label for="">Send to Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="">Send to Mobile Phone</label>
+                        <input type="number" name="" id="">
+                    </div>
+                    <div>
+                        <label for="">Send to Email</label>
+                        <input type="email" name="" id="">
+                    </div>            
+                    <button type="submit" >Generate Nabr Link</button>                                
+                </form>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

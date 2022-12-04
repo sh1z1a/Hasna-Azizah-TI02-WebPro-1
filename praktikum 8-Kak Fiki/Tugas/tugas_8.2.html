@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktikum 9.2</title>
+
+    <style>
+      .box{
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin: 0;
+        padding: 0;
+      }
+      .container{
+        background-color: indianred;
+        padding: 0.5rem;
+      }
+      .header {
+        background-color: aqua;
+        height: 100px;
+        width: 860px;
+        border: 10px solid indianred;
+      }
+      .container-2{
+        display: flex;
+        flex-direction: row;
+      }
+      .aside{
+        background-color: cadetblue;
+        height: 300px;
+        width: 500px;
+        border: 10px ;
+        border: 10px solid indianred;  
+        border-top: none;
+      }
+      .article{
+        background-color: green;
+        height: 300px;
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        border: 10px solid indianred;
+        border-top: none;
+        border-left: none;
+      }
+      .img  {
+        height: 80px;
+        width: 80px;
+        background-color: black;
+        
+      }
+      .footer{
+        background-color: khaki;
+        height: 100px;
+        width: 860px;
+        border: 10px solid indianred;
+        border-top: none;
+      }            
+      .container-3{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        margin-bottom: 30px;
+      }                
+    </style>
+
+  </head>
+  <body>
+    <div class="box">
+      <div class="container">
+        <div class="header">Header</div>
+        <div class="container-2">
+          <div class="aside">Aside</div>
+          <div class="article">
+            <p>Article</p>
+            <div class="container-3">              
+              <div class="img"></div>
+              <div class="img"></div>
+              <div class="img"></div>
+            </div>
+            
+          </div>
+        </div>
+        <div class="footer"><footer></footer></div>
+      </div>
+    </div>
+  </body>
+</html>

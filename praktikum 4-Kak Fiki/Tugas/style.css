@@ -1,0 +1,51 @@
+ul {
+  list-style-type: none;
+}
+
+
+/* Header */
+.container-1 {
+  display: flex;
+  flex-direction: row;
+}
+
+.profil {
+  border-radius: 5px;
+}
+/* Akhir header */
+
+
+/* Footer */
+.kotak11 {
+  margin-left: 20px;
+  border: 1px solid rgb(105, 92, 92);
+  width: 250px;
+  height: 150px;
+}
+
+.kotak12 {
+  margin-left: 20px;
+}
+
+.img {
+  width: 100px;
+  height: 60px;
+  margin: 5px 5px;
+}
+
+.atas {
+  display: flex;
+  flex-direction: row;
+}
+
+.bawah {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-4 {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Akhir footer */
