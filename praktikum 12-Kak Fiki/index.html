@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180" />
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+    <link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json" />
+    <link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9" />
+    <link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico" />
+
+  </head>
+
+  <body>
+    <!-- Membuat Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Geprek Yenak</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Profile</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Layanan </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Menu</a></li>
+                <li><a class="dropdown-item" href="#">Promo</a></li>
+                <li><a class="dropdown-item" href="#">Lokasi</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Mau layanan apa..." aria-label="Search" />
+            <button class="btn btn-success" type="submit">Cari</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir dari Navbar -->
+
+    <!-- Membuat content -->
+    <div class="row mt-3 p-3">
+      <div class="col-9">
+        <div class="bg-light p-5 rounded">
+          <h1>Selamat Datang di Geprek Yenak</h1>
+          <p class="lead">Kami menyediakan berbagai macam sambal geprek untuk ayam(nyam), bebek(bek), maupun kriuk.</p>
+          <a class="btn btn-lg btn-primary" href="/docs/5.2/components/navbar/" role="button">Daftar Sekarang!</a>
+        </div>
+      </div>
+      <div class="col-3">
+        <ul class="list-group">
+          <li class="list-group-item active" aria-current="true">Menu Favorit</li>
+          <li class="list-group-item">Nyam geprek</li>
+          <li class="list-group-item">Bek Geprek Sambel Ijo</li>
+          <li class="list-group-item">Kriuk Geprek</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <div class="container px-4 py-5" id="featured-3">
+          <h2 class="pb-2 border-bottom">Layanan kami</h2>
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#collection" /></svg>
+              </div>
+              <h3 class="fs-2">Menu</h3>
+              <p>Kriuk geprek menjadi menu favorit di geprek yenak. Tekstur krispi serta cita rasa terbaru membuat pengunjung rela antri untuk menikmati kriuk geprek.</p>
+              <a href="#" class="icon-link d-inline-flex align-items-center btn btn-outline-primary">
+                klik untuk selengkapnya
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right" /></svg>
+              </a>
+            </div>
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#people-circle" /></svg>
+              </div>
+              <h3 class="fs-2">Promo</h3>
+              <p>Setiap jumat nya ada discount 20% untuk paket nyam geprek.</p>
+              <a href="#" class="icon-link d-inline-flex align-items-center btn btn-outline-primary">
+                klik untuk selengkapnya
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right" /></svg>
+              </a>
+            </div>
+            <div class="feature col">
+              <div class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#toggles2" /></svg>
+              </div>
+              <h3 class="fs-2">Lokasi</h3>
+              <p>Kami tersebar di beberapa kota besar di Indonesia. Margonda-Depok, Lenteng Agung-Jakarta Selatan, Ciawi-Bogor, Bekasi.</p>
+              <a href="#" class="icon-link d-inline-flex align-items-center btn btn-outline-primary">
+                klik untuk selengkapnya
+                <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Akhir dari content -->
+
+    <!-- Footer -->
+    <div class="row">
+      <div class="col-12">
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Profile</a></li>
+              <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Layanan</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Copy Right by Hasna Azizah</p>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <!-- Akhir Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
+</html>
